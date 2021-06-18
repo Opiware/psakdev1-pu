@@ -1,0 +1,159 @@
+/* Copyright Statement:
+ *
+ */
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "bt_sink_srv.h"
+
+static const bt_sink_srv_table_t g_bt_sink_app_mapping_table[] = {
+    // Call control
+    {
+        // ANSWER INCOMING
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_PRESS_UP,
+        BT_SINK_SRV_STATE_INCOMING,
+        BT_SINK_SRV_ACTION_ANSWER
+    },
+    {
+        // REJECT INCOMING
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        BT_SINK_SRV_STATE_INCOMING,
+        BT_SINK_SRV_ACTION_REJECT
+    },
+    {
+        // HANG UP ACTIVE/OUTGOING
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_PRESS_UP,
+        (bt_sink_srv_state_t)(BT_SINK_SRV_STATE_ACTIVE | BT_SINK_SRV_STATE_OUTGOING |
+        BT_SINK_SRV_STATE_HELD_ACTIVE | BT_SINK_SRV_STATE_TWC_INCOMING |
+        BT_SINK_SRV_STATE_MULTIPARTY),
+        BT_SINK_SRV_ACTION_HANG_UP
+    },
+    {
+        // HOLD ACTIVE
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        BT_SINK_SRV_STATE_ACTIVE,
+        BT_SINK_SRV_ACTION_3WAY_HOLD_ACTIVE_ACCEPT_OTHER
+    },
+    {
+        // RETRIEVE HELD
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        BT_SINK_SRV_STATE_HELD_REMAINING,
+        BT_SINK_SRV_ACTION_3WAY_HOLD_ACTIVE_ACCEPT_OTHER
+    },
+    {
+        // SWAP ACTIVE AND HELD
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        BT_SINK_SRV_STATE_HELD_ACTIVE,
+        BT_SINK_SRV_ACTION_3WAY_HOLD_ACTIVE_ACCEPT_OTHER
+    },
+    {
+        // HOLD AND ACCEPT
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        BT_SINK_SRV_STATE_TWC_INCOMING,
+        BT_SINK_SRV_ACTION_3WAY_HOLD_ACTIVE_ACCEPT_OTHER
+    },
+    {
+        // REJECT WAITING
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_DOUBLE_CLICK,
+        BT_SINK_SRV_STATE_TWC_INCOMING,
+        BT_SINK_SRV_ACTION_3WAY_RELEASE_ALL_HELD
+    },
+    {
+        // REDIAL LAST DIALED NUMBER
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        BT_SINK_SRV_STATE_CONNECTED,
+        BT_SINK_SRV_ACTION_DIAL_LAST
+    },
+    {
+        // SWITCH AUDIO PATH
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_DOUBLE_CLICK,
+        (bt_sink_srv_state_t)(BT_SINK_SRV_STATE_ACTIVE | BT_SINK_SRV_STATE_HELD_ACTIVE),
+        BT_SINK_SRV_ACTION_SWITCH_AUDIO_PATH
+    },
+    // Remote volume control
+    {
+        BT_SINK_SRV_KEY_NEXT,
+        BT_SINK_SRV_KEY_ACT_PRESS_UP,
+        (bt_sink_srv_state_t)(BT_SINK_SRV_STATE_ACTIVE | BT_SINK_SRV_STATE_HELD_ACTIVE),
+        BT_SINK_SRV_ACTION_VOLUME_UP
+    },
+    {
+        BT_SINK_SRV_KEY_PREV,
+        BT_SINK_SRV_KEY_ACT_PRESS_UP,
+        (bt_sink_srv_state_t)(BT_SINK_SRV_STATE_ACTIVE | BT_SINK_SRV_STATE_HELD_ACTIVE),
+        BT_SINK_SRV_ACTION_VOLUME_DOWN
+    },
+    {
+        BT_SINK_SRV_KEY_PREV,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        (bt_sink_srv_state_t)(BT_SINK_SRV_STATE_ACTIVE | BT_SINK_SRV_STATE_HELD_ACTIVE),
+        BT_SINK_SRV_ACTION_VOLUME_MIN
+    },
+    {
+        BT_SINK_SRV_KEY_NEXT,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        (bt_sink_srv_state_t)(BT_SINK_SRV_STATE_ACTIVE | BT_SINK_SRV_STATE_HELD_ACTIVE),
+        BT_SINK_SRV_ACTION_VOLUME_MAX
+    },
+    // Music control
+    {
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_PRESS_UP,
+        BT_SINK_SRV_STATE_STREAMING,
+        BT_SINK_SRV_ACTION_PAUSE
+    },
+    {
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_PRESS_UP,
+        BT_SINK_SRV_STATE_CONNECTED,
+        BT_SINK_SRV_ACTION_PLAY
+    },
+    {
+        BT_SINK_SRV_KEY_NEXT,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        (bt_sink_srv_state_t)(BT_SINK_SRV_STATE_CONNECTED | BT_SINK_SRV_STATE_STREAMING),
+        BT_SINK_SRV_ACTION_NEXT_TRACK
+    },
+    {
+        BT_SINK_SRV_KEY_PREV,
+        BT_SINK_SRV_KEY_ACT_LONG_PRESS_UP,
+        (bt_sink_srv_state_t)(BT_SINK_SRV_STATE_CONNECTED | BT_SINK_SRV_STATE_STREAMING),
+        BT_SINK_SRV_ACTION_PRE_TRACK
+    },
+    /* CONNECTION MANAGEMENT */
+    {
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_DOUBLE_CLICK,
+        BT_SINK_SRV_STATE_POWER_ON,
+        BT_SINK_SRV_ACTION_CONNECT
+    },
+    {
+        BT_SINK_SRV_KEY_FUNC,
+        BT_SINK_SRV_KEY_ACT_LONG_LONG_PRESS_DOWN,
+        BT_SINK_SRV_STATE_POWER_ON,
+        BT_SINK_SRV_ACTION_DISCOVERABLE
+    },
+
+    /* Add before this line */
+    {
+        BT_SINK_SRV_KEY_NONE,
+        BT_SINK_SRV_KEY_ACT_NONE,
+        BT_SINK_SRV_STATE_NONE,
+        BT_SINK_SRV_ACTION_ALL
+    }
+};
+
+const bt_sink_srv_table_t *bt_sink_srv_get_mapping_table(void)
+{
+    return g_bt_sink_app_mapping_table;
+}

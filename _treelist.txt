@@ -1,0 +1,2087 @@
+tree /A > _treelist.txt
+-----------------------
+Folder PATH listing
+Volume serial number is B41A-927B
+Z:.
++---config
+|   +---board
+|   |   +---linkit7697_hdk
+|   |   +---mt2523_hdk
+|   |   \---mt7687_hdk
+|   +---chip
+|   |   +---mt2523
+|   |   +---mt7687
+|   |   \---mt7697
+|   \---module
++---docs
+|   +---LinkIt_76X7
+|   \---progrcpp
++---driver
+|   +---board
+|   |   +---component
+|   |   |   +---biosensor
+|   |   |   |   \---mt2511
+|   |   |   |       +---API_Reference
+|   |   |   |       +---inc
+|   |   |   |       +---module
+|   |   |   |       |   +---default
+|   |   |   |       |   +---everlight
+|   |   |   |       |   +---osram
+|   |   |   |       |   +---solteamopto
+|   |   |   |       |   \---solteamopto_vca003
+|   |   |   |       \---src
+|   |   |   +---common
+|   |   |   +---eint_key
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---external_dsp
+|   |   |   |   +---config
+|   |   |   |   +---config_auto
+|   |   |   |   +---config_ndvc
+|   |   |   |   +---config_test
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---gauge
+|   |   |   |   \---max17048
+|   |   |   +---lcm
+|   |   |   |   +---NT35510
+|   |   |   |   +---RM67160
+|   |   |   |   +---RM69032
+|   |   |   |   +---RM69080
+|   |   |   |   +---SH1107
+|   |   |   |   +---SH1107_band
+|   |   |   |   \---ST7789H2
+|   |   |   +---led
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---mdp
+|   |   |   |   +---inc
+|   |   |   |   |   \---mt6252
+|   |   |   |   |       \---idp_hw
+|   |   |   |   \---src
+|   |   |   |       \---mt6252
+|   |   |   |           \---idp_hw
+|   |   |   +---mems
+|   |   |   |   +---inc
+|   |   |   |   |   \---libyas533
+|   |   |   |   +---lib
+|   |   |   |   \---src
+|   |   |   |       \---icm30630
+|   |   |   |           +---image
+|   |   |   |           \---Invn
+|   |   |   |               +---Devices
+|   |   |   |               |   \---Drivers
+|   |   |   |               |       \---Icm30xxx
+|   |   |   |               +---EmbUtils
+|   |   |   |               \---FifoProtocol
+|   |   |   +---pmic
+|   |   |   |   +---MAX14745
+|   |   |   |   \---MT6327
+|   |   |   \---touch_panel
+|   |   |       +---common
+|   |   |       |   +---inc
+|   |   |       |   \---src
+|   |   |       +---ctp_goodix_gt9xxx
+|   |   |       |   \---gt9137
+|   |   |       \---ctp_ite_it7xxx
+|   |   |           \---it7258
+|   |   +---linkit7697_hdk
+|   |   |   +---bootloader
+|   |   |   |   \---src
+|   |   |   |       \---mt7687
+|   |   |   +---bt_codec
+|   |   |   |   \---src
+|   |   |   +---eint_key
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---ept
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---external_flash
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---led
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   \---util
+|   |   |       +---inc
+|   |   |       \---src
+|   |   +---mt25x3_hdk
+|   |   |   +---backlight
+|   |   |   +---bootloader
+|   |   |   |   \---core
+|   |   |   |       +---inc
+|   |   |   |       |   \---pmic
+|   |   |   |       \---src
+|   |   |   |           \---pmic
+|   |   |   +---bt_codec
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---eint_key
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---emi
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---ept
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---flashgen
+|   |   |   +---gnss
+|   |   |   +---keypad
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---lcd
+|   |   |   +---led
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---mems_init
+|   |   |   +---ostimer
+|   |   |   +---spi_external_flash
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   \---touch_panel
+|   |   |       +---config
+|   |   |       +---gt9137
+|   |   |       \---it7258
+|   |   \---mt76x7_hdk
+|   |       +---bootloader
+|   |       |   \---src
+|   |       |       \---mt7687
+|   |       +---bt_codec
+|   |       |   +---inc
+|   |       |   \---src
+|   |       +---eint_key
+|   |       |   +---inc
+|   |       |   \---src
+|   |       +---ept
+|   |       |   +---inc
+|   |       |   \---src
+|   |       +---external_flash
+|   |       |   +---inc
+|   |       |   \---src
+|   |       +---led
+|   |       |   +---inc
+|   |       |   \---src
+|   |       \---util
+|   |           +---inc
+|   |           \---src
+|   +---chip
+|   |   +---inc
+|   |   +---mt2523
+|   |   |   +---inc
+|   |   |   \---src
+|   |   |       \---GCC
+|   |   +---mt7686
+|   |   |   +---inc
+|   |   |   |   \---fw
+|   |   |   \---src
+|   |   |       +---common
+|   |   |       |   \---include
+|   |   |       \---GCC
+|   |   +---mt7687
+|   |   |   +---inc
+|   |   |   \---src
+|   |   |       +---common
+|   |   |       |   \---include
+|   |   |       \---GCC
+|   |   \---nrf5_sdk
+|   \---CMSIS
+|       +---Device
+|       |   \---MTK
+|       |       +---mt2523
+|       |       |   +---Include
+|       |       |   +---linkerscript
+|       |       |   |   +---gcc
+|       |       |   |   |   +---default
+|       |       |   |   |   +---full_bin_fota
+|       |       |   |   |   \---ram
+|       |       |   |   \---rvct
+|       |       |   |       +---default
+|       |       |   |       +---full_bin_fota
+|       |       |   |       \---ram
+|       |       |   \---Source
+|       |       |       \---GCC
+|       |       +---mt7682
+|       |       |   +---Include
+|       |       |   +---linkerscript
+|       |       |   |   \---gcc
+|       |       |   |       +---default
+|       |       |   |       +---full_bin_fota
+|       |       |   |       \---ram
+|       |       |   \---Source
+|       |       +---mt7686
+|       |       |   +---Include
+|       |       |   +---linkerscript
+|       |       |   |   \---gcc
+|       |       |   |       +---default
+|       |       |   |       +---full_bin_fota
+|       |       |   |       \---ram
+|       |       |   \---Source
+|       |       \---mt7687
+|       |           +---Include
+|       |           +---linkerscript
+|       |           |   \---rvct
+|       |           \---Source
+|       |               \---GCC
+|       +---DSP_Lib
+|       |   \---Source
+|       |       +---BasicMathFunctions
+|       |       +---CommonTables
+|       |       +---ComplexMathFunctions
+|       |       +---ControllerFunctions
+|       |       +---FastMathFunctions
+|       |       +---FilteringFunctions
+|       |       +---MatrixFunctions
+|       |       +---StatisticsFunctions
+|       |       +---SupportFunctions
+|       |       \---TransformFunctions
+|       +---Include
+|       \---Lib
++---kernel
+|   +---rtos
+|   |   +---FreeRTOS
+|   |   |   \---Source
+|   |   |       +---include
+|   |   |       \---portable
+|   |   |           +---GCC
+|   |   |           |   +---ARM_CM4F
+|   |   |           |   +---mt2523
+|   |   |           |   +---mt7686
+|   |   |           |   \---mt7687
+|   |   |           +---IAR
+|   |   |           |   +---ARM_CM4F
+|   |   |           |   +---mt2523
+|   |   |           |   +---mt7686
+|   |   |           |   \---mt7687
+|   |   |           +---MemMang
+|   |   |           \---RVDS
+|   |   |               +---ARM_CM4F
+|   |   |               +---mt2523
+|   |   |               +---mt7686
+|   |   |               \---mt7687
+|   |   \---freertos_uart
+|   |       +---cm3
+|   |       |   \---include
+|   |       |       +---component
+|   |       |       +---instance
+|   |       |       \---pio
+|   |       +---freertos
+|   |       |   +---include
+|   |       |   +---mem
+|   |       |   \---portable
+|   |       \---source
+|   |           \---include
+|   \---service
+|       +---inc
+|       \---src
++---middleware
+|   +---memfault-sdk
+|   +---MTK
+|   |   +---atci
+|   |   |   +---at_command
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---audio
+|   |   |   +---aac_codec
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---amr_codec
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---audio_mixer
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---inc
+|   |   |   +---mp3_codec
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---port
+|   |   |   |   \---mt2523
+|   |   |   |       +---inc
+|   |   |   |       \---src
+|   |   |   +---prompt_control
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---sbc_codec
+|   |   |   |   +---inc
+|   |   |   |   +---lib
+|   |   |   |   |   \---arm_cm4
+|   |   |   |   \---src
+|   |   |   +---src
+|   |   |   \---wav_codec
+|   |   |       +---inc
+|   |   |       +---lib
+|   |   |       |   \---arm_cm4
+|   |   |       \---src
+|   |   +---audio_manager
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---battery_management
+|   |   |   +---inc
+|   |   |   +---port
+|   |   |   |   \---mt2523
+|   |   |   |       +---inc
+|   |   |   |       \---src
+|   |   |   \---src
+|   |   +---ble_bas
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---ble_ias
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---bluetooth
+|   |   |   +---inc
+|   |   |   +---lib
+|   |   |   \---src
+|   |   +---bluetooth_service
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---bt_callback_manager
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---bt_notify
+|   |   |   +---inc
+|   |   |   |   \---dogp
+|   |   |   \---src
+|   |   |       \---dogp
+|   |   +---bt_sink
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---bt_source
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---config_framework
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---connsys
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---dhcpd
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---fota
+|   |   |   +---inc
+|   |   |   |   \---internal
+|   |   |   \---src
+|   |   |       \---internal
+|   |   +---gdi
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---gnss
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---iperf
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---key_event
+|   |   |   +---common
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---eint_key
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   \---keypad
+|   |   |       +---inc
+|   |   |       \---src
+|   |   +---minicli
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---nvdm
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---port_service
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---sensor_subsys
+|   |   |   +---inc
+|   |   |   |   \---algo_adaptor
+|   |   |   \---src
+|   |   |       \---algo_adaptor
+|   |   +---serial_nand
+|   |   |   +---inc
+|   |   |   \---src
+|   |   |       \---port
+|   |   +---serial_nor
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---sink
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---smtcn
+|   |   |   +---inc
+|   |   |   |   \---internal
+|   |   |   \---src
+|   |   +---tftp
+|   |   |   +---inc
+|   |   |   \---src
+|   |   +---usb
+|   |   |   +---inc
+|   |   |   \---src
+|   |   |       +---cdc
+|   |   |       +---msc
+|   |   |       \---_common
+|   |   +---verno
+|   |   |   \---inc
+|   |   \---wifi_service
+|   |       +---combo
+|   |       |   +---inc
+|   |       |   \---src
+|   |       |       +---init
+|   |       |       +---sie
+|   |       |       \---wifi_os_ext
+|   |       +---stub_conf
+|   |       |   +---inc
+|   |       |   \---src
+|   |       \---wifi_host
+|   |           +---inc
+|   |           \---src
+|   \---third_party
+|       +---aws_iot
+|       |   +---external_libs
+|       |   |   +---CppUTest
+|       |   |   +---jsmn
+|       |   |   \---mbedTLS
+|       |   +---include
+|       |   +---linux
+|       |   +---platform
+|       |   |   +---freertos
+|       |   |   \---linux
+|       |   |       +---common
+|       |   |       +---mbedtls
+|       |   |       \---pthread
+|       |   +---samples
+|       |   |   +---freertos
+|       |   |   |   +---shadow_sample
+|       |   |   |   +---shadow_sample_console_echo
+|       |   |   |   +---subscribe_publish_cpp_sample
+|       |   |   |   +---subscribe_publish_library_sample
+|       |   |   |   \---subscribe_publish_sample
+|       |   |   \---linux
+|       |   |       +---shadow_sample
+|       |   |       +---shadow_sample_console_echo
+|       |   |       +---subscribe_publish_cpp_sample
+|       |   |       +---subscribe_publish_library_sample
+|       |   |       \---subscribe_publish_sample
+|       |   +---src
+|       |   \---tests
+|       |       +---freertos_integration
+|       |       |   +---include
+|       |       |   +---multithreadingTest
+|       |       |   \---src
+|       |       +---integration
+|       |       |   +---include
+|       |       |   +---multithreadingTest
+|       |       |   \---src
+|       |       \---unit
+|       |           +---include
+|       |           +---src
+|       |           \---tls_mock
+|       +---cjson
+|       |   +---inc
+|       |   \---src
+|       +---fatfs
+|       |   +---doc
+|       |   |   +---en
+|       |   |   +---ja
+|       |   |   \---res
+|       |   \---src
+|       |       +---option
+|       |       \---portable
+|       |           +---mt2523
+|       |           |   +---bootloader
+|       |           |   |   \---src
+|       |           |   +---inc
+|       |           |   \---src
+|       |           +---mt7682
+|       |           |   +---inc
+|       |           |   \---src
+|       |           +---mt7686
+|       |           |   +---inc
+|       |           |   \---src
+|       |           \---mt7687
+|       |               +---inc
+|       |               \---src
+|       +---httpclient
+|       |   +---inc
+|       |   +---linux
+|       |   \---src
+|       +---httpd
+|       |   +---inc
+|       |   +---linux
+|       |   +---src
+|       |   +---web_c
+|       |   \---web_html
+|       +---iperf3
+|       |   +---inc
+|       |   +---linux
+|       |   \---src
+|       +---kiss_fft
+|       |   +---linux
+|       |   +---test
+|       |   \---tools
+|       +---libcoap
+|       |   +---doc
+|       |   +---examples
+|       |   |   \---lwip
+|       |   +---include
+|       |   |   \---coap
+|       |   +---linux
+|       |   +---src
+|       |   \---tests
+|       +---lwip
+|       |   +---doc
+|       |   +---ports
+|       |   |   \---include
+|       |   |       +---arch
+|       |   |       \---lwip
+|       |   +---src
+|       |   |   +---api
+|       |   |   +---core
+|       |   |   |   +---ipv4
+|       |   |   |   +---ipv6
+|       |   |   |   \---snmp
+|       |   |   +---include
+|       |   |   |   +---lwip
+|       |   |   |   +---netif
+|       |   |   |   |   \---ppp
+|       |   |   |   |       \---polarssl
+|       |   |   |   \---posix
+|       |   |   |       \---sys
+|       |   |   \---netif
+|       |   |       \---ppp
+|       |   |           \---polarssl
+|       |   \---test
+|       |       \---unit
+|       |           +---core
+|       |           +---dhcp
+|       |           +---etharp
+|       |           +---tcp
+|       |           \---udp
+|       +---lzma_decoder
+|       |   +---inc
+|       |   +---linux
+|       |   \---src
+|       +---mbedtls
+|       |   +---configs
+|       |   +---doxygen
+|       |   |   \---input
+|       |   +---include
+|       |   |   \---mbedtls
+|       |   +---library
+|       |   +---port
+|       |   +---programs
+|       |   |   +---aes
+|       |   |   +---hash
+|       |   |   +---pkey
+|       |   |   +---random
+|       |   |   +---ssl
+|       |   |   +---test
+|       |   |   +---util
+|       |   |   \---x509
+|       |   +---scripts
+|       |   |   \---data_files
+|       |   +---tests
+|       |   |   +---data_files
+|       |   |   |   +---dir1
+|       |   |   |   +---dir2
+|       |   |   |   +---dir3
+|       |   |   |   \---dir4
+|       |   |   +---scripts
+|       |   |   \---suites
+|       |   +---visualc
+|       |   |   \---VS2010
+|       |   \---yotta
+|       |       \---data
+|       |           +---example-authcrypt
+|       |           +---example-benchmark
+|       |           +---example-hashing
+|       |           \---example-selftest
+|       +---mDNSResponder
+|       |   +---inc
+|       |   +---linux
+|       |   \---src
+|       |       +---Clients
+|       |       +---mDNSCore
+|       |       +---mDNSPosix
+|       |       \---mDNSShared
+|       +---mqtt
+|       |   +---linux
+|       |   +---MQTTClient-C
+|       |   |   +---samples
+|       |   |   |   \---linux
+|       |   |   \---src
+|       |   |       \---mediatek
+|       |   \---MQTTPacket
+|       |       +---samples
+|       |       +---src
+|       |       \---test
+|       +---nghttp2
+|       |   +---lib
+|       |   |   \---includes
+|       |   |       \---nghttp2
+|       |   \---linux
+|       +---ping
+|       |   +---inc
+|       |   +---linux
+|       |   \---src
+|       +---sntp
+|       |   +---inc
+|       |   +---linux
+|       |   \---src
+|       +---speex
+|       |   +---doc
+|       |   +---include
+|       |   |   +---ogg
+|       |   |   \---speex
+|       |   +---libspeex
+|       |   +---linux
+|       |   \---src
+|       +---touchgfx
+|       |   +---inc
+|       |   |   +---common
+|       |   |   +---mvp
+|       |   |   +---platform
+|       |   |   |   +---core
+|       |   |   |   |   \---arm
+|       |   |   |   |       \---cortex-m
+|       |   |   |   |           \---CMSIS
+|       |   |   |   \---driver
+|       |   |   |       +---button
+|       |   |   |       +---i2c
+|       |   |   |       +---lcd
+|       |   |   |       \---touch
+|       |   |   \---touchgfx
+|       |   |       +---canvas_widget_renderer
+|       |   |       +---containers
+|       |   |       |   +---clock
+|       |   |       |   \---progress_indicators
+|       |   |       +---events
+|       |   |       +---hal
+|       |   |       +---lcd
+|       |   |       +---mixins
+|       |   |       +---transforms
+|       |   |       +---transitions
+|       |   |       \---widgets
+|       |   |           \---canvas
+|       |   +---lib
+|       |   |   +---core
+|       |   |   |   \---cortex_m4f
+|       |   |   |       +---gcc
+|       |   |   |       +---IAR
+|       |   |   |       \---Keil
+|       |   |   +---linux
+|       |   |   +---sdl
+|       |   |   |   +---linux64
+|       |   |   |   \---win32
+|       |   |   \---win
+|       |   |       +---mingw32
+|       |   |       \---msvs
+|       |   +---linux
+|       |   \---src
+|       +---websocket
+|       |   +---builds
+|       |   |   \---android
+|       |   |       \---jni
+|       |   +---contrib
+|       |   |   \---objc
+|       |   +---linux
+|       |   +---src
+|       |   \---test
+|       |       +---librws_test
+|       |       |   +---Assets.xcassets
+|       |       |   |   \---AppIcon.appiconset
+|       |       |   \---Base.lproj
+|       |       +---librws_test.xcodeproj
+|       |       |   +---project.xcworkspace
+|       |       |   |   \---xcuserdata
+|       |       |   |       \---residentevil.xcuserdatad
+|       |       |   \---xcuserdata
+|       |       |       \---residentevil.xcuserdatad
+|       |       |           +---xcdebugger
+|       |       |           \---xcschemes
+|       |       \---librws_testTests
+|       +---wiznet_driver
+|       \---xml
+|           +---doc
+|           +---inc
+|           |   \---xml
+|           +---linux
+|           \---src
++---out
+|   +---linkit7697_hdk
+|   |   \---uart_loopback_data_dma
+|   |       +---log
+|   |       \---obj
+|   |           +---driver
+|   |           |   +---board
+|   |           |   |   \---linkit7697_hdk
+|   |           |   |       \---external_flash
+|   |           |   |           \---src
+|   |           |   \---chip
+|   |           |       \---mt7687
+|   |           |           \---src
+|   |           |               \---common
+|   |           +---middleware
+|   |           |   \---MTK
+|   |           |       \---verno
+|   |           \---project
+|   |               \---linkit7697_hdk
+|   |                   \---hal_examples
+|   |                       \---uart_loopback_data_dma
+|   |                           +---GCC
+|   |                           \---src
+|   +---mt2523_hdk
+|   |   \---uart_loopback_data_dma
+|   |       +---log
+|   |       \---obj
+|   |           +---driver
+|   |           |   \---chip
+|   |           |       \---mt2523
+|   |           |           \---src
+|   |           +---middleware
+|   |           |   \---MTK
+|   |           |       \---verno
+|   |           \---project
+|   |               \---mt2523_hdk
+|   |                   \---hal_examples
+|   |                       \---uart_loopback_data_dma
+|   |                           +---GCC
+|   |                           \---src
+|   \---mt7687_hdk
+|       \---uart_loopback_data_dma
+|           +---log
+|           \---obj
+|               +---driver
+|               |   +---board
+|               |   |   \---mt76x7_hdk
+|               |   |       \---external_flash
+|               |   |           \---src
+|               |   \---chip
+|               |       \---mt7687
+|               |           \---src
+|               |               \---common
+|               +---middleware
+|               |   \---MTK
+|               |       \---verno
+|               \---project
+|                   \---mt7687_hdk
+|                       \---hal_examples
+|                           \---uart_loopback_data_dma
+|                               +---GCC
+|                               \---src
++---packages
+|   +---.github
+|   |   \---workflows
+|   +---iot
+|   |   +---abup_fota
+|   |   +---agile_jsmn
+|   |   +---agile_telnet
+|   |   +---airkissOpen
+|   |   +---atsrv_socket
+|   |   +---at_device
+|   |   |   +---a9g
+|   |   |   +---air720
+|   |   |   +---bc26
+|   |   |   +---bc28
+|   |   |   +---ec20
+|   |   |   +---ec200x
+|   |   |   +---esp32
+|   |   |   +---esp8266
+|   |   |   +---l610
+|   |   |   +---m26
+|   |   |   +---m5311
+|   |   |   +---m6315
+|   |   |   +---me3616
+|   |   |   +---mw31
+|   |   |   +---n21
+|   |   |   +---n58
+|   |   |   +---n720
+|   |   |   +---rw007
+|   |   |   +---sim76xx
+|   |   |   +---sim800c
+|   |   |   +---v1.x.x
+|   |   |   \---w60x
+|   |   +---bc28_mqtt
+|   |   +---btstack
+|   |   +---capnp
+|   |   +---cJSON
+|   |   +---cmux
+|   |   +---coap
+|   |   +---dlt645
+|   |   +---ezXML
+|   |   +---freemodbus
+|   |   +---iot_cloud
+|   |   |   +---ali-iotkit
+|   |   |   |   +---menu
+|   |   |   |   \---v20x
+|   |   |   +---azure-iot-sdk
+|   |   |   +---GAgent
+|   |   |   +---jiot-c-sdk
+|   |   |   +---joylink
+|   |   |   +---onenet
+|   |   |   +---tencent-iot-sdk
+|   |   |   \---ucloud_iot_sdk
+|   |   +---ipmsg
+|   |   +---jsmn
+|   |   +---kawaii-mqtt
+|   |   +---libcurl2rtt
+|   |   +---libmodbus
+|   |   +---librws
+|   |   +---ljson
+|   |   +---lorawan_driver
+|   |   +---lorawan_ed_stack
+|   |   +---lssdp
+|   |   +---mongoose
+|   |   +---mymqtt
+|   |   +---nanopb
+|   |   +---netutils
+|   |   +---NimBLE
+|   |   +---nmealib
+|   |   +---nopoll
+|   |   +---onnx-backend
+|   |   +---onnx-parser
+|   |   +---ota_downloader
+|   |   +---pahomqtt
+|   |   +---pdulib
+|   |   +---ppp_device
+|   |   +---protobuf-c
+|   |   +---qxwz
+|   |   +---rt_cjson_tools
+|   |   +---smtp_client
+|   |   +---tcpserver
+|   |   +---umqtt
+|   |   +---wayz_iotkit
+|   |   +---webclient
+|   |   +---webnet
+|   |   +---WebTerminal
+|   |   +---WiFi
+|   |   |   +---rw007
+|   |   |   +---wlanmarvell
+|   |   |   \---wlan_wiced
+|   |   \---wiznet
+|   +---language
+|   |   +---jerryscript
+|   |   +---Lua
+|   |   \---micropython
+|   +---misc
+|   |   +---armv7m_dwt
+|   |   +---CanFestival
+|   |   +---crclib
+|   |   +---DigitalCtrl
+|   |   +---dstr
+|   |   +---elapack
+|   |   +---fastlz
+|   |   +---FlexibleButton
+|   |   +---games
+|   |   |   +---c2048
+|   |   |   +---snake
+|   |   |   +---tetris
+|   |   |   \---threes
+|   |   +---hello
+|   |   +---kendryte-demo
+|   |   +---ki
+|   |   +---libann
+|   |   +---libcsv
+|   |   +---lwgps
+|   |   +---lzma
+|   |   +---miniLZO
+|   |   +---MultiButton
+|   |   +---nnom
+|   |   +---optparse
+|   |   +---quicklz
+|   |   +---samples
+|   |   |   +---filesystem_samples
+|   |   |   +---kernel_samples
+|   |   |   +---network_samples
+|   |   |   \---peripheral_samples
+|   |   +---state_machine
+|   |   +---TensorflowLiteMicro
+|   |   +---TinyFrame
+|   |   +---ukal
+|   |   +---ulapack
+|   |   +---upacker
+|   |   +---uparam
+|   |   +---vi
+|   |   +---vt100
+|   |   \---zlib
+|   +---multimedia
+|   |   +---AzureGUIX
+|   |   +---helix
+|   |   +---mupdf
+|   |   +---openmv
+|   |   +---STemWin
+|   |   +---TJpgDec
+|   |   +---touchgfx2rtt
+|   |   \---wavplayer
+|   +---peripherals
+|   |   +---ad7746
+|   |   +---agile_button
+|   |   +---agile_console
+|   |   +---agile_led
+|   |   +---as608
+|   |   +---as7341
+|   |   +---at24cxx
+|   |   +---beep
+|   |   +---button
+|   |   +---can_ymodem
+|   |   +---dm9051
+|   |   +---easyblink
+|   |   +---embARC_bsp
+|   |   +---i2c-tools
+|   |   +---icm20608
+|   |   +---infrared
+|   |   +---kendryte-sdk
+|   |   +---ld3320
+|   |   +---LedBlink
+|   |   +---littled
+|   |   +---lkdGui
+|   |   +---lora_radio_driver
+|   |   +---ly68l6400
+|   |   +---max17048
+|   |   +---max7219
+|   |   +---MotionDriver2RTT
+|   |   +---multi_rtimer
+|   |   +---nes
+|   |   +---nrf24l01
+|   |   +---nrf5x_sdk
+|   |   +---nrfx
+|   |   +---nuclei_sdk
+|   |   +---PAJ7620
+|   |   +---pca9685
+|   |   +---pcf8574
+|   |   +---pms_series
+|   |   +---qkey
+|   |   +---quick_led
+|   |   +---rc522
+|   |   +---realtek_ameba
+|   |   +---rosserial
+|   |   +---rplidar
+|   |   +---rs485
+|   |   +---rtc
+|   |   |   +---ds3231
+|   |   |   \---rx8900
+|   |   +---sensors
+|   |   |   +---aht10
+|   |   |   +---ap3216c
+|   |   |   +---bh1750
+|   |   |   +---bma400
+|   |   |   +---bme280
+|   |   |   +---bme680
+|   |   |   +---bmi088
+|   |   |   +---bmi160_bmx160
+|   |   |   +---bmp180
+|   |   |   +---bmp280
+|   |   |   +---ccs811
+|   |   |   +---da270
+|   |   |   +---df220
+|   |   |   +---dht11
+|   |   |   +---dhtxx
+|   |   |   +---ds18b20
+|   |   |   +---gp2y10
+|   |   |   +---gy271
+|   |   |   +---hdc1000
+|   |   |   +---hmc5883
+|   |   |   +---hshcal001
+|   |   |   +---hts221
+|   |   |   +---lps22hb
+|   |   |   +---lsm303agr
+|   |   |   +---lsm6dsl
+|   |   |   +---max31865
+|   |   |   +---max6675
+|   |   |   +---mlx90632
+|   |   |   +---mpu6xxx
+|   |   |   +---ms5611
+|   |   |   +---ms5805
+|   |   |   +---pmsxx
+|   |   |   +---rt3020
+|   |   |   +---sgp30
+|   |   |   +---shtc1
+|   |   |   +---spl0601
+|   |   |   +---sr04
+|   |   |   +---tmp1075
+|   |   |   +---tsl4531
+|   |   |   \---vl53l0x
+|   |   +---sgm706
+|   |   +---sht2x
+|   |   +---sht3x
+|   |   +---SignalLed
+|   |   +---ssd1306
+|   |   +---stm32_sdio
+|   |   +---sx12xx
+|   |   +---touch
+|   |   |   +---ft5426
+|   |   |   +---ft6206
+|   |   |   +---ft6236
+|   |   |   +---gt1151
+|   |   |   +---gt9147
+|   |   |   \---gt917s
+|   |   +---u8g2
+|   |   +---vdevice
+|   |   +---vsensor
+|   |   +---wk2124
+|   |   +---wm_libraries
+|   |   \---ws2812b
+|   +---security
+|   |   +---libsodium
+|   |   +---mbedtls
+|   |   +---tinycrypt
+|   |   +---trusted-firmware-m
+|   |   \---yd_crypto
+|   +---system
+|   |   +---cairo
+|   |   +---CMSIS
+|   |   +---EV
+|   |   +---fal
+|   |   +---FlashDB
+|   |   +---gui_engine
+|   |   +---littlefs
+|   |   +---LittlevGL2RTT
+|   |   +---lwext4
+|   |   +---Micrium
+|   |   |   +---uCOSIII_Wrapper
+|   |   |   +---uCOSII_Wrapper
+|   |   |   +---uC_CLK
+|   |   |   +---uC_Common
+|   |   |   +---uC_CRC
+|   |   |   \---uC_Modbus
+|   |   +---minIni
+|   |   +---openamp
+|   |   +---partition
+|   |   +---persimmon
+|   |   +---pixman
+|   |   +---plccore
+|   |   +---Ppool
+|   |   +---qboot
+|   |   +---ramdisk
+|   |   +---rt-robot
+|   |   +---rti
+|   |   +---rt_printf
+|   |   +---sqlite
+|   |   +---syswatch
+|   |   +---sys_load_monitor
+|   |   +---thread_pool
+|   |   \---yaffs2
+|   \---tools
+|       +---adbd
+|       +---bs8116a
+|       +---ChineseFontLibrary
+|       +---CmBacktrace
+|       +---CoreMark
+|       +---cpu_usage
+|       +---Dhrystone
+|       +---EasyFlash
+|       +---EasyLogger
+|       +---gbk2utf8
+|       +---gps_rmc
+|       +---kdb
+|       +---logmgr
+|       +---lunar_calendar
+|       +---lwrb2rtt
+|       +---mbedtls_bench
+|       +---MemoryPerf
+|       +---nr_micro_shell
+|       +---qrcode
+|       +---rdb
+|       +---SystemView
+|       +---ulog_easyflash
+|       +---ulog_file
+|       +---uMCN
+|       +---UrlEncode
+|       +---vconsole
+|       \---wamr
++---packages-2
+|   +---aht10
+|   +---ali-iotkit
+|   +---ap3216c
+|   +---atsrv_socket
+|   +---at_device
+|   +---azure-iot-sdk
+|   +---bma400
+|   +---bme280
+|   +---bmi160_bmx160
+|   +---cairo
+|   +---cJSON
+|   +---CMSIS
+|   +---cmux
+|   +---coap
+|   +---dstr
+|   +---duktape
+|   +---ezXML
+|   +---fal
+|   +---fastlz
+|   +---filesystem-sample
+|   +---freemodbus
+|   +---ft6206
+|   +---ftl
+|   +---GAgent
+|   +---gdbstub
+|   +---gt9147
+|   +---gui_engine
+|   +---heatshrink
+|   +---hello
+|   +---hts221
+|   +---icm20608
+|   +---infrared_framework
+|   +---iperf
+|   +---jerryscript
+|   +---joylink
+|   +---jsmn
+|   +---kdb
+|   +---kendryte_sdk
+|   +---kernel-sample
+|   +---librws
+|   +---libsodium
+|   +---logmgr
+|   +---lps22hb
+|   +---lsm303agr
+|   +---lsm6dsl
+|   +---lssdp
+|   +---mbedtls
+|   +---micro-ecc
+|   +---micropython
+|   +---miniLZO
+|   +---minimp3
+|   +---mlibc
+|   +---mpu-6xxx
+|   +---nanopb
+|   +---netutils
+|   +---network-sample
+|   +---newlib
+|   +---nimble
+|   +---nopoll
+|   +---nt5510
+|   +---onenet
+|   +---openssl
+|   +---ota_downloader
+|   +---otm8009a
+|   +---paho-mqtt
+|   +---partition
+|   +---pcf8574
+|   +---peripheral-sample
+|   +---persimmon
+|   +---pixman
+|   +---player
+|   +---ppp_device
+|   +---qianxun
+|   +---qrcode
+|   +---quicklz
+|   +---rdb
+|   +---rt-robot
+|   +---rti
+|   +---rw007
+|   +---samples
+|   +---SEGGER_SystemView
+|   +---sht2x
+|   +---snippets
+|   +---spl0601
+|   +---SQLite
+|   +---st7789
+|   +---STM32F4_Drivers
+|   +---STM32F4_HAL
+|   +---stm32_sdio
+|   +---tinycbor
+|   +---tinycrypt
+|   +---TJpgDec
+|   +---trusted-firmware-m
+|   +---ulog_file
+|   +---umqtt
+|   +---vdevice
+|   +---vi
+|   +---vsensor
+|   +---wavplayer
+|   +---webclient
+|   +---webnet
+|   +---wiznet
+|   +---wlan-wiced
+|   +---yaffs2
+|   \---zlib
++---prebuilt
+|   +---driver
+|   |   +---board
+|   |   |   \---component
+|   |   |       +---audio
+|   |   |       |   +---inc
+|   |   |       |   \---lib
+|   |   |       |       \---arm_cm4
+|   |   |       \---bt_codec
+|   |   |           +---inc
+|   |   |           \---lib
+|   |   |               \---arm_cm4
+|   |   \---chip
+|   |       +---mt2523
+|   |       |   \---lib
+|   |       +---mt7686
+|   |       |   \---lib
+|   |       \---mt7687
+|   |           +---lib
+|   |           \---wifi_n9
+|   \---middleware
+|       \---MTK
+|           +---audio
+|           |   +---aac_codec
+|           |   |   \---lib
+|           |   +---amr_codec
+|           |   |   \---lib
+|           |   |       \---arm_cm4
+|           |   \---mp3_codec
+|           |       \---lib
+|           |           \---arm_cm4
+|           +---ble_ancs
+|           |   +---inc
+|           |   \---lib
+|           +---bluetooth
+|           |   +---inc
+|           |   \---lib
+|           +---bt_notify
+|           |   \---lib
+|           +---fuelgauge
+|           |   +---inc
+|           |   \---lib
+|           +---fusion_algo
+|           |   +---blood_pressure
+|           |   |   +---inc
+|           |   |   \---lib_core
+|           |   +---common
+|           |   |   +---inc
+|           |   |   \---lib_core
+|           |   +---heart_rate
+|           |   |   +---API_Reference
+|           |   |   +---inc
+|           |   |   \---lib_core
+|           |   +---heart_rate_variability
+|           |   |   +---inc
+|           |   |   \---lib_core
+|           |   +---pedometer
+|           |   |   \---inc
+|           |   +---ppg_control
+|           |   |   +---API_Reference
+|           |   |   +---inc
+|           |   |   +---lib_core
+|           |   |   \---module
+|           |   |       +---default
+|           |   |       +---everlight
+|           |   |       +---osram
+|           |   |       +---solteamopto
+|           |   |       \---solteamopto_vca003
+|           |   \---sleep_tracker
+|           |       +---inc
+|           |       \---lib_core
+|           +---minicli
+|           |   \---lib
+|           +---minisupp
+|           |   +---inc
+|           |   \---lib
+|           +---nvdm
+|           |   \---lib
+|           +---serial_nand
+|           |   \---lib
+|           +---slp
+|           |   +---inc
+|           |   \---lib
+|           +---smtcn
+|           |   \---lib
+|           +---wifi_service
+|           |   \---combo
+|           |       \---lib
+|           |           +---wifi_inic
+|           |           \---wifi_supp
+|           \---wifi_stack
+|               +---inc
+|               +---lib
+|               \---rom
+|                   +---e1
+|                   |   \---inc
+|                   |       +---mgmt
+|                   |       +---nic
+|                   |       +---pse
+|                   |       \---rom
+|                   \---e2
+|                       \---inc
+|                           +---mgmt
+|                           +---nic
+|                           +---pse
+|                           \---rom
++---project
+|   +---common
+|   |   +---bsp_ex
+|   |   |   +---inc
+|   |   |   \---src
+|   |   \---certs
+|   |       \---aws
+|   +---linkit7697_hdk
+|   |   +---apps
+|   |   |   +---bootloader
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---coap
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---http_client_retrieve
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---lwip_socket
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---mbedtls
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---mqtt_client
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   \---websocket_client
+|   |   |       +---GCC
+|   |   |       +---inc
+|   |   |       \---src
+|   |   +---hal_examples
+|   |   |   +---adc_get_data_polling
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---eint_edge_falling
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---gpio_configure_pull_state
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---i2c_control_EEPROM_with_dma
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---pwm_generate_waveform
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---sleep_manager_power_mode
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---spi_master_polling
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   \---uart_loopback_data_dma
+|   |   |       +---GCC
+|   |   |       |   \---build
+|   |   |       |       +---driver
+|   |   |       |       |   +---board
+|   |   |       |       |   |   \---linkit7697_hdk
+|   |   |       |       |   |       \---external_flash
+|   |   |       |       |   |           \---src
+|   |   |       |       |   \---chip
+|   |   |       |       |       \---mt7687
+|   |   |       |       |           \---src
+|   |   |       |       |               \---common
+|   |   |       |       \---project
+|   |   |       |           \---linkit7697_hdk
+|   |   |       |               \---hal_examples
+|   |   |       |                   \---uart_loopback_data_dma
+|   |   |       |                       +---GCC
+|   |   |       |                       \---src
+|   |   |       +---inc
+|   |   |       \---src
+|   |   \---templates
+|   |       +---freertos_create_thread
+|   |       |   +---GCC
+|   |       |   +---inc
+|   |       |   \---src
+|   |       \---freertos_initialize_main_features
+|   |           +---GCC
+|   |           +---inc
+|   |           \---src
+|   +---mt2523_hdk
+|   |   +---apps
+|   |   |   +---atci_register_command
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---audio_mp3_play
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---battery_management_get_status
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---ble_ancs_ios_notification
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---ble_find_me
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---ble_gatt_heart_rate
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---ble_proximity
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---bootloader
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---bt_android_notification
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---bt_spp_transfer_data
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---cord_free_headset_ref_design
+|   |   |   |   \---GCC
+|   |   |   +---display_drawing_image
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---fatfs_read_write_file
+|   |   |   |   +---ept_config
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---fota_download_manager
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   |   +---fota_inc
+|   |   |   |   |   \---gnss_inc
+|   |   |   |   \---src
+|   |   |   |       \---gnss_src
+|   |   |   +---gdi_display_helloworld
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   +---resource
+|   |   |   |   |   \---images
+|   |   |   |   \---src
+|   |   |   +---gnss_get_location
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---headset_ref_design
+|   |   |   |   +---ept_config
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   |   +---AudioPlayer
+|   |   |   |   |   |   \---audio_file_manager
+|   |   |   |   |   +---ble_ancs_ios_notification
+|   |   |   |   |   +---ble_bas_app
+|   |   |   |   |   +---ble_find_me_server
+|   |   |   |   |   +---fota
+|   |   |   |   |   +---notification
+|   |   |   |   |   +---sink
+|   |   |   |   |   \---voice_tone
+|   |   |   |   \---src
+|   |   |   |       +---AudioPlayer
+|   |   |   |       |   \---audio_file_manager
+|   |   |   |       +---ble_ancs_ios_notification
+|   |   |   |       +---ble_bas_app
+|   |   |   |       +---ble_find_me_server
+|   |   |   |       +---fota
+|   |   |   |       +---low_power_demo
+|   |   |   |       +---Notification
+|   |   |   |       +---pmic_port
+|   |   |   |       |   \---max14745
+|   |   |   |       \---sink
+|   |   |   +---inear_noodles_headset_ref_design
+|   |   |   |   \---GCC
+|   |   |   +---iot_sdk_demo
+|   |   |   |   +---ept_config
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   |   +---bt_audio
+|   |   |   |   |   |   \---sink
+|   |   |   |   |   +---gnss_screen
+|   |   |   |   |   +---hogp
+|   |   |   |   |   +---main_screen
+|   |   |   |   |   +---pxp_screen
+|   |   |   |   |   +---sensor_demo
+|   |   |   |   |   \---watch_face
+|   |   |   |   \---src
+|   |   |   |       +---bt_audio
+|   |   |   |       |   \---sink
+|   |   |   |       +---gnss_screen
+|   |   |   |       +---hogp
+|   |   |   |       +---low_power_demo
+|   |   |   |       +---main_screen
+|   |   |   |       +---pxp_screen
+|   |   |   |       +---sensor_demo
+|   |   |   |       \---watch_face
+|   |   |   +---mp3_local_playback
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   |   \---AudioPlayer
+|   |   |   |   \---src
+|   |   |   |       \---AudioPlayer
+|   |   |   +---sensor_subsys_accelerometer
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   \---watch_ref_design
+|   |   |       +---GCC
+|   |   |       +---inc
+|   |   |       |   +---gnss_demo
+|   |   |       |   \---sensor_demo
+|   |   |       \---src
+|   |   |           +---generated
+|   |   |           |   +---fonts
+|   |   |           |   |   +---include
+|   |   |           |   |   |   \---fonts
+|   |   |           |   |   \---src
+|   |   |           |   +---images
+|   |   |           |   |   +---include
+|   |   |           |   |   \---src
+|   |   |           |   |       +---MainMenu
+|   |   |           |   |       \---Setting
+|   |   |           |   \---texts
+|   |   |           |       +---include
+|   |   |           |       |   \---texts
+|   |   |           |       \---src
+|   |   |           +---gnss_demo
+|   |   |           +---sensor_demo
+|   |   |           +---touch_adapter
+|   |   |           \---ui
+|   |   |               +---assets
+|   |   |               |   +---fonts
+|   |   |               |   +---images
+|   |   |               |   |   +---MainMenu
+|   |   |               |   |   \---Setting
+|   |   |               |   \---texts
+|   |   |               +---config
+|   |   |               |   +---gcc
+|   |   |               |   \---msvs
+|   |   |               \---gui
+|   |   |                   +---include
+|   |   |                   |   \---gui
+|   |   |                   |       +---common
+|   |   |                   |       +---database
+|   |   |                   |       +---graph_screen
+|   |   |                   |       +---main_menu_screen
+|   |   |                   |       +---model
+|   |   |                   |       \---setting_screen
+|   |   |                   \---src
+|   |   |                       +---common
+|   |   |                       +---database
+|   |   |                       +---graph_screen
+|   |   |                       +---main_menu_screen
+|   |   |                       +---model
+|   |   |                       \---setting_screen
+|   |   +---hal_examples
+|   |   |   +---accdet_detect_earphone_status
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---aes_encrypt_decrypt_data
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---audio_play_1k_tone
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---dac_output_data_repeatedly
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---eint_edge_falling
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---ept_configure_pins_by_ept
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---flash_read_write_data
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---g2d_overlay_layer
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---gdma_transfer_data_interrupt
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---gpio_configure_pull_state
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---gpt_interrupt_repeat_mode
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---i2c_control_EEPROM_with_dma_ex
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---i2c_control_EEPROM_with_polling
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---i2s_internal_loopback
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---powerkey
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---pwm_generate_waveform
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---rtc_set_alarm
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---sd_read_write_data_dma
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---sleep_manager_power_mode
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---spi_master_polling
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---spi_master_to_slave
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---spi_slave_from_master
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---sw_gpt_interrupt_oneshot_mode
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---trng_generate_random_data
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---uart_loopback_data_dma
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   +---usb_cdc_demo
+|   |   |   |   +---GCC
+|   |   |   |   +---inc
+|   |   |   |   \---src
+|   |   |   |       \---usb_demo
+|   |   |   \---wdt_feed_watchdog
+|   |   |       +---GCC
+|   |   |       +---inc
+|   |   |       \---src
+|   |   \---templates
+|   |       +---freertos_create_thread
+|   |       |   +---GCC
+|   |       |   +---inc
+|   |       |   \---src
+|   |       +---freertos_initialize_main_features
+|   |       |   +---GCC
+|   |       |   +---inc
+|   |       |   \---src
+|   |       \---no_rtos_initialize_system
+|   |           +---GCC
+|   |           +---inc
+|   |           \---src
+|   \---mt7687_hdk
+|       +---apps
+|       |   +---aws_iot
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---bootloader
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---cjson
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---coap
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---fatfs_read_write_file
+|       |   |   +---ept_config
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---httpd
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---http_client_get
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---http_client_keepalive
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---http_client_retrieve
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---iot_sdk_demo
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---lwip_socket
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---mbedtls
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---mdns_publish_service
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---minicli
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---mqtt_client
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---nghttp2_client
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---sntp_client
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---websocket_client
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   \---xml
+|       |       +---GCC
+|       |       +---inc
+|       |       \---src
+|       +---hal_examples
+|       |   +---adc_get_data_polling
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---aes_encrypt_decrypt_data
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---des_encrypt_decrypt_data
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---eint_edge_falling
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---ept_configure_pins_by_ept
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---flash_read_write_data
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---gdma_transfer_data_interrupt
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---gpc_capture_pulses_polling
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---gpio_configure_pull_state
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---gpt_interrupt_repeat_mode
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---i2c_control_EEPROM_with_dma
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---i2c_control_EEPROM_with_polling
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---i2s_internal_loopback
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---irrx_receive_pwd_data
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---irtx_send_pwd_data
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---md5_get_hash
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---pwm_generate_waveform
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---rtc_set_alarm
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---sha_get_hash
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---sleep_manager_power_mode
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---spi_master_polling
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---spi_master_to_slave
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---spi_slave_from_master
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---trng_generate_random_data
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   +---uart_loopback_data_dma
+|       |   |   +---GCC
+|       |   |   +---inc
+|       |   |   \---src
+|       |   \---wdt_feed_watchdog
+|       |       +---GCC
+|       |       +---inc
+|       |       \---src
+|       \---templates
+|           +---freertos_create_thread
+|           |   +---GCC
+|           |   +---inc
+|           |   \---src
+|           +---freertos_initialize_main_features
+|           |   +---GCC
+|           |   +---inc
+|           |   \---src
+|           \---no_rtos_initialize_system
+|               +---GCC
+|               +---inc
+|               \---src
+\---tools
+    +---config
+    |   +---linkit7697_hdk
+    |   |   +---download
+    |   |   |   \---fota_dual_image
+    |   |   \---ept
+    |   +---mt2523_hdk
+    |   |   +---download
+    |   |   |   +---default
+    |   |   |   \---gnss
+    |   |   +---ept
+    |   |   \---openocd_config
+    |   \---mt7687_hdk
+    |       +---download
+    |       |   \---fota_dual_image
+    |       \---ept
+    +---gcc
+    |   \---gcc-arm-none-eabi
+    |       +---arm-none-eabi
+    |       |   +---bin
+    |       |   +---include
+    |       |   |   +---c++
+    |       |   |   |   \---4.8.4
+    |       |   |   |       +---arm-none-eabi
+    |       |   |   |       |   +---armv6-m
+    |       |   |   |       |   |   +---bits
+    |       |   |   |       |   |   \---ext
+    |       |   |   |       |   +---armv7-ar
+    |       |   |   |       |   |   \---thumb
+    |       |   |   |       |   |       +---bits
+    |       |   |   |       |   |       +---ext
+    |       |   |   |       |   |       +---fpu
+    |       |   |   |       |   |       |   +---bits
+    |       |   |   |       |   |       |   \---ext
+    |       |   |   |       |   |       \---softfp
+    |       |   |   |       |   |           +---bits
+    |       |   |   |       |   |           \---ext
+    |       |   |   |       |   +---armv7-m
+    |       |   |   |       |   |   +---bits
+    |       |   |   |       |   |   \---ext
+    |       |   |   |       |   +---armv7e-m
+    |       |   |   |       |   |   +---bits
+    |       |   |   |       |   |   +---ext
+    |       |   |   |       |   |   +---fpu
+    |       |   |   |       |   |   |   +---bits
+    |       |   |   |       |   |   |   \---ext
+    |       |   |   |       |   |   \---softfp
+    |       |   |   |       |   |       +---bits
+    |       |   |   |       |   |       \---ext
+    |       |   |   |       |   +---bits
+    |       |   |   |       |   +---ext
+    |       |   |   |       |   +---fpu
+    |       |   |   |       |   |   +---bits
+    |       |   |   |       |   |   \---ext
+    |       |   |   |       |   \---thumb
+    |       |   |   |       |       +---bits
+    |       |   |   |       |       \---ext
+    |       |   |   |       +---backward
+    |       |   |   |       +---bits
+    |       |   |   |       +---debug
+    |       |   |   |       +---decimal
+    |       |   |   |       +---ext
+    |       |   |   |       |   \---pb_ds
+    |       |   |   |       |       \---detail
+    |       |   |   |       |           +---binary_heap_
+    |       |   |   |       |           +---binomial_heap_
+    |       |   |   |       |           +---binomial_heap_base_
+    |       |   |   |       |           +---bin_search_tree_
+    |       |   |   |       |           +---branch_policy
+    |       |   |   |       |           +---cc_hash_table_map_
+    |       |   |   |       |           +---eq_fn
+    |       |   |   |       |           +---gp_hash_table_map_
+    |       |   |   |       |           +---hash_fn
+    |       |   |   |       |           +---left_child_next_sibling_heap_
+    |       |   |   |       |           +---list_update_map_
+    |       |   |   |       |           +---list_update_policy
+    |       |   |   |       |           +---ov_tree_map_
+    |       |   |   |       |           +---pairing_heap_
+    |       |   |   |       |           +---pat_trie_
+    |       |   |   |       |           +---rb_tree_map_
+    |       |   |   |       |           +---rc_binomial_heap_
+    |       |   |   |       |           +---resize_policy
+    |       |   |   |       |           +---splay_tree_
+    |       |   |   |       |           +---thin_heap_
+    |       |   |   |       |           +---tree_policy
+    |       |   |   |       |           +---trie_policy
+    |       |   |   |       |           \---unordered_iterator
+    |       |   |   |       +---parallel
+    |       |   |   |       +---profile
+    |       |   |   |       |   \---impl
+    |       |   |   |       +---tr1
+    |       |   |   |       \---tr2
+    |       |   |   +---machine
+    |       |   |   \---sys
+    |       |   +---lib
+    |       |   |   +---armv6-m
+    |       |   |   +---armv7-ar
+    |       |   |   |   \---thumb
+    |       |   |   |       +---fpu
+    |       |   |   |       \---softfp
+    |       |   |   +---armv7-m
+    |       |   |   +---armv7e-m
+    |       |   |   |   +---fpu
+    |       |   |   |   \---softfp
+    |       |   |   +---fpu
+    |       |   |   +---ldscripts
+    |       |   |   \---thumb
+    |       |   \---share
+    |       |       \---gdb
+    |       |           +---python
+    |       |           |   \---gdb
+    |       |           |       +---command
+    |       |           |       \---function
+    |       |           \---syscalls
+    |       +---bin
+    |       +---lib
+    |       |   \---gcc
+    |       |       \---arm-none-eabi
+    |       |           \---4.8.4
+    |       |               +---armv6-m
+    |       |               +---armv7-ar
+    |       |               |   \---thumb
+    |       |               |       +---fpu
+    |       |               |       \---softfp
+    |       |               +---armv7-m
+    |       |               +---armv7e-m
+    |       |               |   +---fpu
+    |       |               |   \---softfp
+    |       |               +---fpu
+    |       |               +---include
+    |       |               +---include-fixed
+    |       |               |   \---sys
+    |       |               +---install-tools
+    |       |               |   \---include
+    |       |               +---plugin
+    |       |               |   \---include
+    |       |               |       +---ada
+    |       |               |       |   \---gcc-interface
+    |       |               |       +---c-family
+    |       |               |       +---config
+    |       |               |       |   \---arm
+    |       |               |       +---cp
+    |       |               |       +---java
+    |       |               |       \---objc
+    |       |               \---thumb
+    |       \---share
+    |           +---doc
+    |           |   \---gcc-arm-none-eabi
+    |           |       +---html
+    |           |       |   +---annotate
+    |           |       |   +---as.html
+    |           |       |   +---bfd.html
+    |           |       |   +---binutils.html
+    |           |       |   +---cpp
+    |           |       |   +---cppinternals
+    |           |       |   +---gcc
+    |           |       |   +---gccinstall
+    |           |       |   +---gccint
+    |           |       |   +---gdb
+    |           |       |   +---gdbint
+    |           |       |   +---gprof.html
+    |           |       |   +---ld.html
+    |           |       |   +---libc
+    |           |       |   +---libm
+    |           |       |   \---stabs
+    |           |       +---info
+    |           |       +---man
+    |           |       |   +---man1
+    |           |       |   \---man7
+    |           |       \---pdf
+    |           |           +---etc
+    |           |           \---gcc
+    |           \---gcc-arm-none-eabi
+    |               +---libstdcxx
+    |               |   \---v6
+    |               \---samples
+    |                   +---ldscripts
+    |                   +---src
+    |                   |   +---cpp
+    |                   |   +---fpin
+    |                   |   +---fpout
+    |                   |   +---minimum
+    |                   |   +---multiram
+    |                   |   +---qemu
+    |                   |   +---retarget
+    |                   |   \---semihost
+    |                   \---startup
+    \---scripts
+        +---build
+        \---migration

@@ -1,0 +1,22 @@
+/mnt/hgfs/_shares1/psakdev1-pv/out/linkit7697_hdk/uart_loopback_data_dma/obj/project/linkit7697_hdk/hal_examples/uart_loopback_data_dma/src/main.o /mnt/hgfs/_shares1/psakdev1-pv/out/linkit7697_hdk/uart_loopback_data_dma/obj/project/linkit7697_hdk/hal_examples/uart_loopback_data_dma/src/main.d: \
+ ../../../../../project/linkit7697_hdk/hal_examples/uart_loopback_data_dma/src/main.c \
+ ../../../../../driver/chip/inc/hal.h ../inc/hal_feature_config.h \
+ ../../../../../driver/chip/mt7687/inc/hal_log.h \
+ ../../../../../driver/chip/inc/hal_cache.h \
+ ../../../../../driver/chip/mt7687/inc/hal_platform.h \
+ ../../../../../driver/chip/inc/hal_define.h \
+ ../../../../../driver/CMSIS/Device/MTK/mt7687/Include/mt7687.h \
+ ../../../../../driver/CMSIS/Include/core_cm4.h \
+ ../../../../../driver/CMSIS/Include/core_cmInstr.h \
+ ../../../../../driver/CMSIS/Include/core_cmFunc.h \
+ ../../../../../driver/CMSIS/Include/core_cmSimd.h \
+ ../../../../../driver/CMSIS/Device/MTK/mt7687/Include/system_mt7687.h \
+ ../../../../../driver/chip/inc/hal_gdma.h \
+ ../../../../../driver/chip/inc/hal_gpio.h \
+ ../../../../../driver/chip/mt7687/inc/hal_pinmux_define.h \
+ ../../../../../driver/chip/mt7687/inc/hal_platform.h \
+ ../../../../../driver/chip/inc/hal_gpt.h \
+ ../../../../../driver/chip/inc/hal_nvic.h \
+ ../../../../../driver/chip/inc/hal_uart.h \
+ ../../../../../driver/CMSIS/Device/MTK/mt7687/Include/system_mt7687.h \
+ ../../../../../driver/chip/mt7687/inc/top.h

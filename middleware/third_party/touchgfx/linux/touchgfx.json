@@ -1,0 +1,35 @@
+{
+  "name": "touchgfx",
+  "description": "??.",
+  "description_zh": "??",
+  "enable": "PKG_USING_TOUCHGFX",
+  "keywords": [
+    "touchgfx"
+  ],
+  "category": "??",
+  "author": {
+    "name": "??",
+    "email": "??",
+    "github": "??"
+  },
+  "license": "??.",
+  "repository": "??",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "readme": "??",
+  "site": [
+    {
+      "version": "??",
+      "URL": "http://touchgfx.com/",
+      "filename": "??",
+      "VER_SHA": "master"
+    },
+    {
+      "version": "latest",
+      "URL": "http://touchgfx.com/",
+      "filename": "??",
+      "VER_SHA": "master"
+    }
+  ]
+}

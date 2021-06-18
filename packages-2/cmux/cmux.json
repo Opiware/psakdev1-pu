@@ -1,0 +1,34 @@
+{
+  "name": "cmux",
+  "description": "This software package is a universal sensor driver package for InvenSense's six-axis series sensors, compatible with mpu6000, mpu6050, mpu6500, mpu9250, icm20608 and other sensors",
+  "description_zh": "",
+  "enable": "",
+  "keywords": [
+    "cmux"
+  ],
+  "category": "RT-Thread-package",
+  "author": {
+    "name" : "RT-Thread development team",
+    "email": "support@rt-thread.com",
+    "github": "RT-Thread-packages"
+  },
+  "license": " Apache-2.0",
+  "repository": "https://github.com/RT-Thread-packages/cmux",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "site": [
+    {
+      "version": "v1.0.0",
+      "URL": "https://github.com/RT-Thread-packages/mcmux.git",
+      "filename": "cmux-1.0.0.zip",
+      "VER_SHA": "c9082dff76ea43cfe8ddd283cf557544a75d46ef"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/RT-Thread-packages/cmux.git",
+      "filename": "cmux-master.zip",
+      "VER_SHA": "master"
+    }
+  ]
+}

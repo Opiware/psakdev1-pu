@@ -1,0 +1,35 @@
+{
+  "name": "lzma_decoder",
+  "description": "??.",
+  "description_zh": "??",
+  "enable": "PKG_USING_LAMZ_DECODER",
+  "keywords": [
+    "lzma_decoder"
+  ],
+  "category": "??",
+  "author": {
+    "name": "ShaddyDC",
+    "email": "shaddythefirst@gmail.com",
+    "github": "ShaddyDC"
+  },
+  "license": "CC0-1.0 License.",
+  "repository": "https://github.com/ShaddyDC/lzma-decoder.git",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "readme": "??",
+  "site": [
+    {
+      "version": "??",
+      "URL": "https://github.com/ShaddyDC/lzma-decoder.git",
+      "filename": "lzma-decoder.zip",
+      "VER_SHA": "master"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/ShaddyDC/lzma-decoder.git",
+      "filename": "lzma-decoder.zip",
+      "VER_SHA": "master"
+    }
+  ]
+}

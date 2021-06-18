@@ -1,0 +1,35 @@
+{
+  "name": "xml",
+  "description": "Mini-XML is a small XML parsing library that you can use to read XML and XML-like data files in your application without requiring large non-standard libraries.",
+  "description_zh": "??",
+  "enable": "PKG_USING_XML",
+  "keywords": [
+    "xml"
+  ],
+  "category": "??",
+  "author": {
+    "name": "??",
+    "email": "??",
+    "github": "??"
+  },
+  "license": "GNU Library General Public License version 2 (LGPL2).",
+  "repository": "",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "readme": "",
+  "site": [
+    {
+      "version": "??",
+      "URL": "http://www.minixml.org/",
+      "filename": "",
+      "VER_SHA": "master"
+    },
+    {
+      "version": "latest",
+      "URL": "http://www.minixml.org/",
+      "filename": "",
+      "VER_SHA": "master"
+    }
+  ]
+}

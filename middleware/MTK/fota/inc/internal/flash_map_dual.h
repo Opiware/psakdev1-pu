@@ -1,0 +1,26 @@
+/* Copyright Statement:
+ *
+ */
+
+#ifndef __FLASH_MAP_DUAL_H__
+#define __FLASH_MAP_DUAL_H__
+
+#include "flash_map.h"
+
+#ifdef MTK_FOTA_DUAL_IMAGE_ENABLE
+
+#define N9_RAMCODE_LENGTH_A   N9_RAMCODE_LENGTH       /* 320KB */
+#define CM4_CODE_LENGTH_A     CM4_CODE_LENGTH         /* 640KB / 1664KB */
+
+#define N9_RAMCODE_LENGTH_B   N9_RAMCODE_LENGTH       /* 320KB */
+#define CM4_CODE_LENGTH_B     CM4_CODE_LENGTH         /* 640KB / 1664KB */
+
+#define N9_RAMCODE_BASE_A     (FOTA_CONTROL_BASE   + FOTA_CONTROL_LENGTH)
+#define CM4_CODE_BASE_A       (N9_RAMCODE_BASE_A   + N9_RAMCODE_LENGTH_A)
+#define N9_RAMCODE_BASE_B     (CM4_CODE_BASE_A     + CM4_CODE_LENGTH_A)
+#define CM4_CODE_BASE_B       (N9_RAMCODE_BASE_B   + N9_RAMCODE_LENGTH_B)
+
+#endif /* MTK_FOTA_DUAL_IMAGE_ENABLE */
+
+#endif // __FLASH_MAP_DUAL_H__
+

@@ -1,0 +1,83 @@
+/* Copyright Statement:
+ *
+ */
+
+#include "bt_sink_srv.h"
+#include "bt_sink_srv_utils.h"
+#include "bt_sink_srv_state_notify.h"
+#include "bt_sink_srv_action.h"
+#include "bt_sink_srv_common.h"
+#include "bt_device_manager.h"
+#include "bt_sink_srv_audio_setting.h"
+
+#ifdef __BT_SINK_SRV_TRACE__
+const static char *bt_sink_srv_key_value_strings[] = {
+    "KEY_NONE",
+    "KEY_FUNC",
+    "KEY_NEXT",
+    "KEY_PREV",
+    "KEY_VOL_DOWN",
+    "KEY_VOL_UP"
+};
+
+const static char *bt_sink_srv_key_action_strings[] = {
+    "ACT_NONE",
+    "ACT_PRESS_DOWN",
+    "ACT_PRESS_UP",
+    "ACT_LONG_PRESS_DOWN",
+    "ACT_LONG_PRESS_UP",
+    "ACT_LONG_LONG_PRESS_DOWN",
+    "ACT_LONG_LONG_PRESS_UP",
+    "ACT_DOUBLE_CLICK"
+};
+#endif
+
+extern void bt_sink_srv_atci_init(void);
+
+bt_sink_srv_status_t bt_sink_srv_key_action(bt_sink_srv_key_value_t key_value,
+        bt_sink_srv_key_action_t key_action)
+{
+    const bt_sink_srv_table_t *mapping_table = bt_sink_srv_get_mapping_table();
+    bt_sink_srv_status_t result = BT_SINK_SRV_STATUS_FAIL;
+
+    if (NULL != mapping_table) {
+        bt_sink_srv_state_t state = bt_sink_srv_state_query();
+        uint32_t index = 0;
+
+        bt_sink_srv_report("state:0x%x, value:%s, act:%s",
+                           state,
+                           bt_sink_srv_key_value_strings[key_value],
+                           bt_sink_srv_key_action_strings[key_action]);
+
+        while (BT_SINK_SRV_KEY_NONE != mapping_table[index].key_value) {
+            if (state & mapping_table[index].sink_state
+                    && key_value == mapping_table[index].key_value
+                    && key_action == mapping_table[index].key_action) {
+                result = bt_sink_srv_action_send(mapping_table[index].sink_action, NULL);
+                break;
+            }
+            index++;
+        }
+    }
+    return result;
+}
+
+void bt_sink_srv_init(bt_sink_srv_features_config_t *features)
+{
+    bt_sink_srv_report("[Sink] bt_sink_srv_init");
+
+    // initialize timer
+    bt_sink_srv_timer_init();
+
+    // initialize atci cmd
+    bt_sink_srv_atci_init();
+    
+    bt_device_manager_init();
+
+    bt_sink_srv_config_features(features);
+
+#ifdef __BT_SINK_SRV_AUDIO_SETTING_SUPPORT__
+    bt_sink_srv_audio_setting_init();
+#endif
+}
+

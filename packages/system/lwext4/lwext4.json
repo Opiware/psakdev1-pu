@@ -1,0 +1,35 @@
+{
+  "name": "lwext4",
+  "description": "an excellent choice of ext2/3/4 filesystem for microcontrollers",
+  "description_zh": "适合微控制器的 ext2 / 3/4文件系统的实现",
+  "enable": "PKG_USING_LWEXT4",
+  "keywords": [
+    "filesystem",
+    "ext",
+    "lwext4"
+  ],
+  "category": "system",
+  "author": {
+    "name": "Michael0066",
+    "email": "Michael0066@qq.com",
+    "github": "Michael0066"
+  },
+  "license": "GPL-2.0",
+  "repository": "https://github.com/Michael0066/lwext4",
+  "homepage": "https://github.com/Michael0066/lwext4#readme",
+  "readme": "A lwext4 package for rt-thread",
+  "site": [
+    {
+      "version": "v1.0.0",
+      "URL": "https://github.com/Michael0066/lwext4.git",
+      "filename": "lwext4_rt_1.0.0.zip",
+      "VER_SHA": "master"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/Michael0066/lwext4.git",
+      "filename": "lwext4.zip",
+      "VER_SHA": "master"
+    }
+  ]
+}

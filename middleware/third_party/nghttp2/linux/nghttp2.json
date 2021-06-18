@@ -1,0 +1,35 @@
+{
+  "name": "nghttp2",
+  "description": "This is an implementation of the Hypertext Transfer Protocol version 2 in C.",
+  "description_zh": "??",
+  "enable": "PKG_USING_NGHTTP2",
+  "keywords": [
+    "nghttp2"
+  ],
+  "category": "??",
+  "author": {
+    "name": "nghttp2",
+    "email": "??",
+    "github": "nghttp2"
+  },
+  "license": "MIT License.",
+  "repository": "https://github.com/nghttp2/nghttp2.git",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "readme": "This is an implementation of the Hypertext Transfer Protocol version 2 in C.",
+  "site": [
+    {
+      "version": "??",
+      "URL": "https://github.com/nghttp2/nghttp2.git",
+      "filename": "nghttp2.zip",
+      "VER_SHA": "master"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/nghttp2/nghttp2.git",
+      "filename": "nghttp2.zip",
+      "VER_SHA": "master"
+    }
+  ]
+}

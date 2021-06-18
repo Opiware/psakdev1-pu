@@ -1,0 +1,35 @@
+{
+  "name": "mqtt",
+  "description": "MQTT C/C++ client library for Embedded platorms..",
+  "description_zh": "??",
+  "enable": "PKG_USING_MQTT",
+  "keywords": [
+    "mqtt"
+  ],
+  "category": "??",
+  "author": {
+    "name": "Eclipse Foundation",
+    "email": "emo@eclipse.org",
+    "github": "Eclipse Foundation"
+  },
+  "license": "??.",
+  "repository": "https://github.com/eclipse/mosquitto.git",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "readme": "MQTT C/C++ client library for Embedded platorms.",
+  "site": [
+    {
+      "version": "??",
+      "URL": "https://github.com/eclipse/mosquitto.git",
+      "filename": "mosquitto",
+      "VER_SHA": "master"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/eclipse/mosquitto.git",
+      "filename": "mosquitto",
+      "VER_SHA": "master"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "infrared_framework",
+  "description": "Infrared framework, based on rt-thread's pin, hwtimer and pwm drivers.",
+  "description_zh": "",
+  "enable": "",
+  "keywords": [
+    "infrared_framework"
+  ],
+  "category": "RT-Thread-package",
+  "author": {
+    "name" : "RT-Thread development team",
+    "email": "support@rt-thread.com",
+    "github": "RT-Thread-packages"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/RT-Thread-packages/infrared_framework",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "site": [
+    {
+      "version": "v1.0.0",
+      "URL": "https://github.com/RT-Thread-packages/infrared_framework.git",
+      "filename": "infrared_framework-1.0.0.zip",
+      "VER_SHA": "c9082dff76ea43cfe8ddd283cf557544a75d46ef"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/RT-Thread-packages/infrared_framework.git",
+      "filename": "infrared_framework-master.zip",
+      "VER_SHA": "master"
+    }
+  ]
+}

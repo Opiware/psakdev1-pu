@@ -1,0 +1,35 @@
+{
+  "name": "mDNSResponder",
+  "description": "The mDNSResponder project is a component of Bonjour.",
+  "description_zh": "??",
+  "enable": "PKG_USING_mDNSResponder",
+  "keywords": [
+    "mDNSResponder"
+  ],
+  "category": "??",
+  "author": {
+    "name": "Jevin Sweval",
+    "email": "??",
+    "github": "jevinskie"
+  },
+  "license": "LICENSE-2.0.",
+  "repository": "https://github.com/jevinskie/mDNSResponder.git",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "readme": "",
+  "site": [
+    {
+      "version": "??",
+      "URL": "https://github.com/jevinskie/mDNSResponder.git",
+      "filename": "mDNSResponder.zip",
+      "VER_SHA": "master"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/jevinskie/mDNSResponder.git",
+      "filename": "mDNSResponder.zip",
+      "VER_SHA": "master"
+    }
+  ]
+}

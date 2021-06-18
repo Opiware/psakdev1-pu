@@ -1,0 +1,35 @@
+{
+  "name": "sntp",
+  "description": "This file is part of the lwIP TCP/IP stack.",
+  "description_zh": "??",
+  "enable": "PKG_USING_SNTP",
+  "keywords": [
+    "sntp"
+  ],
+  "category": "??",
+  "author": {
+    "name": "??",
+    "email": "??",
+    "github": "??"
+  },
+  "license": "",
+  "repository": "https://github.com/lwip-tcpip/lwip.git",
+  "icon": "unknown",
+  "homepage": "unknown",
+  "doc": "unknown",
+  "readme": "This file is part of the lwIP TCP/IP stack",
+  "site": [
+    {
+      "version": "lastest",
+      "URL": "https://github.com/lwip-tcpip/lwip.git",
+      "filename": "",
+      "VER_SHA": "master"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/lwip-tcpip/lwip.git",
+      "filename": "",
+      "VER_SHA": "master"
+    }
+  ]
+}
